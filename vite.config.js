@@ -1,3 +1,3 @@
 export default {
-    base: '/MATH-DUNGEON-SITE/'
+    base: '/MATH-DUNGEON-SITE/',
 }
