@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Chakra-Petch;
+        font-weight: 700;
+        font-style: normal;
+        src: url("/public/fonts/Chakra_Petch/ChakraPetch-Bold.ttf");
+
+    }
+    @font-face {
+        font-family: Chakra-Petch;
+        font-weight: 500;
+        font-style: normal;
+        src: url("/public/fonts/Chakra_Petch/ChakraPetch-Medium.ttf");
+
+    }
+    @font-face {
+        font-family: Chakra-Petch;
+        font-weight: 300;
+        font-style: normal;
+        src: url("/public/fonts/Chakra_Petch/ChakraPetch-Light.ttf");
+    }
+
+    @font-face {
+        font-family: Lilita-One;
+        font-weight: 400;
+        font-style: normal;
+        src: url("/fonts/Lilita_One/LilitaOne-Regular.ttf");
+
+    }
+
+    html {
+        font-family: Chakra-Petch, sistem-ui, sans-serif;
+    }
+}
+
+@layer components {
+    h1 {
+        font-family: Lilita-One;
+    }
+
+    h3 {
+        @apply text-xl w-11/12 lg:text-3xl text-white text-center;
+    }
+
+    .logo {
+        @apply text-[5.5rem] leading-none md:mt-52 w-auto lg:rotate-12 lg:text-[9rem] text-white;
+    }
+
+    .logosm {
+        @apply text-[3rem] leading-none md:m-28 mb-10 lg:text-[5rem] text-white;
+    }
+
+    .logo-left { 
+        @apply w-auto lg:-rotate-12 lg:ml-14;
+    }   
+
+    .gamePlay {
+        @apply w-11/12 lg:text-left lg:w-[45%] lg:h-auto lg:mx-[3%];
+    }
+
+    .phoneImg {
+        @apply hidden lg:block w-[26rem] h-[40rem] ;
+    }
+
+    .phoneImgM {
+        @apply w-[13rem] h-[20rem] my-[3px] md:hidden;
+    }
+
+    .circleCont, .circleCont1 {
+        @apply hidden flex-row justify-center lg:flex absolute top-[45rem] h-[11rem] w-full;
+    }
+
+    .circleCont1 {
+        @apply top-[93rem];
+    }
+
+    .circle, .circle1 {
+        @apply rounded-full mx-10 bg-[#5B9A8B] w-[9rem] h-[9rem];
+    }
+
+    .screenshot {
+        @apply hidden lg:block w-[40%] ml-[5%];
+    }
+
+    .playButton {
+        @apply hidden bg-[#5B9A8B] text-[azure] text-[2rem] lg:p-2.5 lg:inline-block absolute top-[5%] left-[80%] border-double border-[#32a1ce] rounded-[30px] hover:bg-[#5C8374];
+    }
+
+    .btnDiv {
+        @apply mt-[5%] flex flex-row justify-center lg:hidden;
+    }
+
+    .playButtonM {
+        @apply p-5 inline-block lg:hidden bg-[#5B9A8B] text-[azure] text-[3rem] absolute top-[80%] border-double border-[#32a1ce] rounded-[10px] hover:bg-[#5C8374];
+    }
+
+    #preview {
+        @apply pt-[10px] h-screen lg:flex lg:flex-row lg:pt-10 lg:pr-10 bg-[#85E6C5];
+    }
+
+    #lore {
+        @apply h-max py-[5rem] flex flex-col items-center lg:h-screen bg-[#5B9A8B] lg:pt-0;
+    }
+
+    #gamePlay {
+        @apply flex flex-col items-center pt-10 bg-[#85E6C5] lg:h-screen;
+    }
+
+    #description {
+        @apply flex flex-col lg:flex-row items-center mb-[20px];
+    }
+}
